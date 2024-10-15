@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antony Luttah - Portfolio & Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="intro-section">
+                <img src="Images/profile.jpg" alt="Antony Luttah" class="profile-image">
+                <div class="intro-text">
+                    <h1>Hello</h1>
+                    <p>A Bit About Me</p>
+                    <p>I'm Antony Luttah Khuyira, a student from Kaimosi Friends University, pursuing a Bachelor of Science in Information Technology.</p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+        </div>
+
+        <!-- CV Download Section -->
+        <div class="download-cv">
+            <h2>Here is my CV for download</h2>
+            <a href="Images/Antony Cv.docx" download class="btn-download">Download CV</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my projects, blog posts, and more!</p>
+            <a href="projects.html" class="btn">View Projects</a>
+        </section>
+
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <img src="images/Gas App.png" alt="Project 1">
+                    <h3>Campus Gas Point</h3>
+                    <p>An android-based application for selling and buying gas and gas equipment online.</p>
+                </div>
+                <div class="project-item">
+                    <img src="images/Farmcare.png" alt="Project 2">
+                    <h3>Farm Care Application</h3>
+                    <p>An android-based application focusing on helping small-scale farmers with their agricultural products.</p>
+                </div>
+                <div class="project-item">
+                    <h3>AI Based</h3>
+                    <p>Still in progress</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-list">
+                <div class="blog-item">
+                    <h3><a href="post1.html">Blog Post Title 1</a></h3>
+                    <p>Summary of the blog post. This should be a brief overview to entice readers.</p>
+                </div>
+                <div class="blog-item">
+                    <h3><a href="post2.html">Blog Post Title 2</a></h3>
+                    <p>Summary of the blog post. This should be a brief overview to entice readers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>My Skills</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <img src="images/html-icon.png" alt="HTML" class="skill-icon">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="images/css-icon.png" alt="CSS" class="skill-icon">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="images/javascript-icon.png" alt="JavaScript" class="skill-icon">
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Phone:</strong> 0791494689</p>
+                <p><strong>Email:</strong> luttahantony03@gmail.com</p>
+            </div>
+    
+            <div class="social-links">
+                <a href="https://web.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/Facebook.png" alt="Facebook" width="30" height="30">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/inastagram.png" alt="Instagram" width="30" height="30">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/twitter.png" alt="Twitter" width="30" height="30">
+                </a>
+                <a href="https://wa.me/0791494689" target="_blank" rel="noopener noreferrer">
+                    <img src="images/Whatsup.png" alt="WhatsApp" width="30" height="30">
+                </a>
+            </div>
+    
+            <p>&copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle active link highlighting
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                navLinks.forEach(link => link.classList.remove('active'));
+                e.target.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
